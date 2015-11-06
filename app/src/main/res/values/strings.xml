@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">FrequencyFinder</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="enter_string">Enter String</string>
+
+    <string name="get_fromtextbox">INPUT TEST</string>
+    <string name="get_fromrest">REST TEST</string>
+    <string name="input_validation">Enter String</string>
+
+</resources>

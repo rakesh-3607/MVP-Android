@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="colorPrimary">#FF2f4366</color>
+    <color name="colorPrimaryDark">#1b1d37</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+    <!--<color name="colorAccent">#ada2c3</color>-->
+    <color name="colorAccent">#818181</color>
+    <color name="blue">#3F51B5</color>
+    <color name="login_button_color">#2f4366</color>
+    <color name="login_button_strip_color">#fb9600</color>
+    <color name="google_button_color">#e02f2f</color>
+    <color name="navigation_item_selected_color">#ebebeb</color>
+    <color name="timer_color">#fe0000</color>
+    <color name="green_button_color">#45d633</color>
+    <color name="light_gray">#eeeeee</color>
+    <color name="dark_gray">#c8c8c8</color>
+    <color name="auction_details_tab_bg">#00c6ff</color>
+    <color name="pink">#e01f60</color>
+
+</resources>
