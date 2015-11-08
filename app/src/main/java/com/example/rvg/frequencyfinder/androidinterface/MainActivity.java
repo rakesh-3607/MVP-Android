@@ -65,7 +65,11 @@ public class MainActivity extends ActionBarActivity implements WordFrequencyList
                     mInputStringEditText.setError(getString(R.string.input_validation));
                     mInputStringEditText.requestFocus();
                 }else{
+                    mInputStringEditText.clearFocus();
+                    mInputStringEditText.setErrorEnabled(false);
+                    mInputStringEditText.setError(null);
                     getWordFrequencyList(mInputStringEditText.getEditText().getText().toString());
+
                 }
             }
         });
@@ -73,6 +77,7 @@ public class MainActivity extends ActionBarActivity implements WordFrequencyList
         mRestInputButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                mInputStringEditText.getEditText().setText("");
                 ClearAdapter();
                 setProgressBarIndeterminateVisibility(true);
                 getWordFrequencyRestList();

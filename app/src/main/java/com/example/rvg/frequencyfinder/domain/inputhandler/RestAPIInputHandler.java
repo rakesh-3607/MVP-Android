@@ -14,16 +14,20 @@ import retrofit.Response;
 import retrofit.Retrofit;
 
 /**
+ *
+ *Not used. Logic is managed from singleton RestProvider.
  * Created by RvG on 11/2/2015.
  */
 public class RestAPIInputHandler {
 
     public String getDataFromRest(){
 
+        final String BASEURL = "https://demo4462252.mockable.io";
+
         final RestData[] restDataResponse = new RestData[1];
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://demo4462252.mockable.io")
+                .baseUrl(BASEURL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
 
