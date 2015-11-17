@@ -31,13 +31,13 @@ public class RestClientProvider {
      * @return
      */
     public static RestClientProvider getInstance() {
-        synchronized (RestClientProvider.class){};
-        if(restClientProviderInstance == null) {
-            restClientProviderInstance = new RestClientProvider();
+        synchronized (RestClientProvider.class){
+            if(restClientProviderInstance == null) {
+                restClientProviderInstance = new RestClientProvider();
+            }
+            return restClientProviderInstance;
         }
-        return restClientProviderInstance;
     }
-
     /**
      * getRetrofitInstance returns the Instance of Retrofit which is required to make REST call.
      * set Base Url, set HTTP client, & gson for desreializing the response.
